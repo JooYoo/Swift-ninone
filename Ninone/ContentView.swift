@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let miniApps = MiniAppList.miniApps
+    
+    // UI
+    let layout = [
+        GridItem(.adaptive(minimum: 150))
+    ]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            ScrollView{
+                LazyVGrid(columns: layout){
+                    ForEach(miniApps, id:\.id){ app in
+                        NavigationLink{
+                            app.miniAppView
+                        } label: {
+                            VStack{
+                                Text(app.name)
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .navigationTitle("Ninone")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

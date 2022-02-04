@@ -11,6 +11,10 @@
 		9A90A4CF27ADA1BD00DD8579 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90A4CE27ADA1BD00DD8579 /* ContentView.swift */; };
 		9A90A4D127ADA1C200DD8579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A90A4D027ADA1C200DD8579 /* Assets.xcassets */; };
 		9A90A4D427ADA1C200DD8579 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A90A4D327ADA1C200DD8579 /* Preview Assets.xcassets */; };
+		9A90A4DB27ADA4AD00DD8579 /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90A4DA27ADA4AC00DD8579 /* MiniApp.swift */; };
+		9A90A4DF27ADAB0400DD8579 /* FakeOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90A4DE27ADAB0400DD8579 /* FakeOrderView.swift */; };
+		9A90A4E227ADAB6C00DD8579 /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90A4E127ADAB6C00DD8579 /* TodosView.swift */; };
+		9A90A4E427ADACFB00DD8579 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90A4E327ADACFB00DD8579 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		9A90A4CE27ADA1BD00DD8579 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A90A4D027ADA1C200DD8579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A90A4D327ADA1C200DD8579 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A90A4DA27ADA4AC00DD8579 /* MiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp.swift; sourceTree = "<group>"; };
+		9A90A4DE27ADAB0400DD8579 /* FakeOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeOrderView.swift; sourceTree = "<group>"; };
+		9A90A4E127ADAB6C00DD8579 /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
+		9A90A4E327ADACFB00DD8579 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				9A90A4CC27ADA1BD00DD8579 /* NinoneApp.swift */,
+				9A90A4DA27ADA4AC00DD8579 /* MiniApp.swift */,
 				9A90A4CE27ADA1BD00DD8579 /* ContentView.swift */,
+				9A90A4E027ADAB1A00DD8579 /* Apps */,
 				9A90A4D027ADA1C200DD8579 /* Assets.xcassets */,
 				9A90A4D227ADA1C200DD8579 /* Preview Content */,
 			);
@@ -65,6 +75,16 @@
 				9A90A4D327ADA1C200DD8579 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A90A4E027ADAB1A00DD8579 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				9A90A4DE27ADAB0400DD8579 /* FakeOrderView.swift */,
+				9A90A4E127ADAB6C00DD8579 /* TodosView.swift */,
+				9A90A4E327ADACFB00DD8579 /* WeatherView.swift */,
+			);
+			path = Apps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A90A4E227ADAB6C00DD8579 /* TodosView.swift in Sources */,
+				9A90A4DF27ADAB0400DD8579 /* FakeOrderView.swift in Sources */,
+				9A90A4DB27ADA4AD00DD8579 /* MiniApp.swift in Sources */,
+				9A90A4E427ADACFB00DD8579 /* WeatherView.swift in Sources */,
 				9A90A4CF27ADA1BD00DD8579 /* ContentView.swift in Sources */,
 				9A90A4CD27ADA1BD00DD8579 /* NinoneApp.swift in Sources */,
 			);
