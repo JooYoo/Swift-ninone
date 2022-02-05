@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
     let miniApps = MiniAppList.miniApps
@@ -19,49 +20,65 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView{
-            ZStack{
-                // background
-                Color(.black)
-                    .ignoresSafeArea()
-                
-                ScrollView{
-                    LazyVGrid(columns: layout){
-                        ForEach(miniApps, id:\.id){ app in
-                            NavigationLink{
-                                app.miniAppView
-                            } label: {
-                                // card
-                                VStack{
-                                    Text(app.emoji)
-                                        .font(.system(size: 60))
-                                        .padding(.vertical)
-                                    
-                                    VStack{
-                                        Text(app.name)
-                                            .font(.headline)
-                                            .foregroundColor(.white)
-                                        Text(app.createDate)
-                                            .font(.caption)
-                                            .foregroundColor(.white.opacity(0.8))
-                                    }
+            
+            ScrollView{
+                LazyVGrid(columns: layout){
+                    ForEach(miniApps, id:\.id){ app in
+                        NavigationLink{
+                            app.miniAppView
+                        } label: {
+                            // card
+                            VStack{
+                                Text(app.emoji)
+                                    .font(.system(size: 60))
                                     .padding(.vertical)
-                                    .frame(maxWidth: .infinity)
-                                    .background(.thickMaterial)
+                                
+                                VStack{
+                                    Text(app.name)
+                                        .font(.headline)
+                                        .foregroundColor(.white)
+                                    Text(app.createDate)
+                                        .font(.caption)
+                                        .foregroundColor(.white.opacity(0.8))
                                 }
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .padding(.vertical)
+                                .frame(maxWidth: .infinity)
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(.gray.opacity(0.5))
+                                    Rectangle()
+                                        .frame(width: nil, height: 1, alignment:.top)
+                                        .foregroundColor(Color.white.opacity(0.5)),
+                                    alignment: .top
                                 )
+                                
+                                
                             }
-                            .padding(5)
+                            .background(
+                                Color(red: 0.16, green: 0.15, blue: 0.19)
+                                    .opacity(0.6)
+                                    .blur(radius: 80)
+                            )
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.white.opacity(0.5))
+                            )
                         }
+                        .padding(5)
                     }
-                    .padding()
                 }
+                .padding()
             }
             .navigationTitle("Ninone")
+            .preferredColorScheme(.dark)
+            .background(
+                Image("bg")
+                    .resizable()
+                    .blur(radius: 5)
+                    .scaledToFill()
+                    .ignoresSafeArea()
+            )
         }
+        
     }
 }
 
