@@ -11,13 +11,16 @@ import SwiftUI
 struct MiniApp: Identifiable {
     let id:UUID = UUID()
     let name: String
+    let emoji: String
+    let createDate: String
     let miniAppView: AnyView
 }
 
 struct MiniAppList {
     static let miniApps = [
-        MiniApp(name: "Todo", miniAppView: AnyView(TodosView())),
-        MiniApp(name: "Weather", miniAppView: AnyView(WeatherView())),
-        MiniApp(name: "Fake Order", miniAppView: AnyView(FakeOrderView())),
+        MiniApp(name: "Ro.Pa.Sci", emoji: "✌🏼", createDate: "2022-01-29",  miniAppView: AnyView(RockPaperScissorsView())),
+        MiniApp(name: "Todo", emoji: "📋", createDate: "2022-02-25", miniAppView: AnyView(TodosView())),
+        MiniApp(name: "Fake Order", emoji: "📦", createDate: "N/A", miniAppView: AnyView(FakeOrderView())),
+        MiniApp(name: "Weather", emoji: "🌦", createDate: "N/A", miniAppView: AnyView(WeatherView())),
     ]
 }
