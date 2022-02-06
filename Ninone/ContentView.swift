@@ -57,6 +57,7 @@ struct ContentView: View {
                                     .opacity(0.6)
                                     .blur(radius: 80)
                             )
+                            //  .background(.ultraThinMaterial)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
@@ -73,11 +74,12 @@ struct ContentView: View {
             .background(
                 Image("bg")
                     .resizable()
-                    .blur(radius: 5)
+                    .blur(radius: 1)
                     .scaledToFill()
                     .ignoresSafeArea()
             )
         }
+        .accentColor(.white)
         
     }
 }

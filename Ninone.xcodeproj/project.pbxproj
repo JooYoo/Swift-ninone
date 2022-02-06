@@ -85,10 +85,10 @@
 		9A90A4E027ADAB1A00DD8579 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				9A945F7A27AED347002162EB /* RockPaperScissorsView.swift */,
 				9A90A4DE27ADAB0400DD8579 /* FakeOrderView.swift */,
 				9A90A4E127ADAB6C00DD8579 /* TodosView.swift */,
 				9A90A4E327ADACFB00DD8579 /* WeatherView.swift */,
-				9A945F7A27AED347002162EB /* RockPaperScissorsView.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
