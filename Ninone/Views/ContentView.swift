@@ -11,6 +11,11 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var vm = MiniAppVM()
     
+    init() {
+        // default TabView bg
+        UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.1)
+    }
+    
     var body: some View {
         TabView{
             HomeView(vm: vm)

@@ -62,10 +62,10 @@ struct RockPaperScissorsView: View {
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
                     .padding(.top, 20)
-                
             }
             .padding()
             .foregroundColor(.white)
+            .offset(y: -40)
             
         }
 //        .navigationBarTitle("Ro.Pa.Sci")
