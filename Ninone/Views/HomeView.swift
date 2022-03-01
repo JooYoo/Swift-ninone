@@ -23,14 +23,14 @@ struct HomeView: View {
                         NavigationLink{
                             app.miniAppView
                         } label: {
-                            GridCard(app: app)
+                            GridCardBigFont(app: app)
                         }
                         .padding(5)
                     }
                 }
                 .padding()
             }
-            .navigationTitle("Ninone")
+            .navigationTitle("Home")
             .staticBg()
         }
         .navigationViewStyle(.stack)

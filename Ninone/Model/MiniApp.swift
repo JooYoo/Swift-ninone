@@ -13,5 +13,7 @@ struct MiniApp: Identifiable {
     let name: String
     let emoji: String
     let createDate: String
+    let shortDesc: String
+    let themeColor: Color
     let miniAppView: AnyView
 }

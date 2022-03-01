@@ -24,6 +24,7 @@
 		9AA35E6827CD48BF003292E6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6727CD48BF003292E6 /* AboutView.swift */; };
 		9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6927CD4C29003292E6 /* StaticBg.swift */; };
 		9AA35E6C27CE7C3D003292E6 /* MiniAppDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */; };
+		9AA35E6E27CE8275003292E6 /* GridCardBigFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		9AA35E6727CD48BF003292E6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		9AA35E6927CD4C29003292E6 /* StaticBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticBg.swift; sourceTree = "<group>"; };
 		9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppDesc.swift; sourceTree = "<group>"; };
+		9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCardBigFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9AA35E5E27CD439E003292E6 /* GridCard.swift */,
+				9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */,
 				9AA35E6927CD4C29003292E6 /* StaticBg.swift */,
 				9A945F7E27AF01A6002162EB /* GlassmorphismBg.swift */,
 			);
@@ -233,6 +236,7 @@
 				9A90A4DB27ADA4AD00DD8579 /* MiniApp.swift in Sources */,
 				9AA35E6127CD44CE003292E6 /* HomeView.swift in Sources */,
 				9A90A4E427ADACFB00DD8579 /* WeatherView.swift in Sources */,
+				9AA35E6E27CE8275003292E6 /* GridCardBigFont.swift in Sources */,
 				9A90A4CF27ADA1BD00DD8579 /* ContentView.swift in Sources */,
 				9A90A4CD27ADA1BD00DD8579 /* NinoneApp.swift in Sources */,
 				9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */,

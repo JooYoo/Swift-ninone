@@ -16,6 +16,7 @@ struct StaticBg: ViewModifier {
                     .blur(radius: 1)
                     .scaledToFill()
                     .ignoresSafeArea()
+                    .blur(radius: 5)
             )
     }
 }
