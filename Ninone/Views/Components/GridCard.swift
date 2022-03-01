@@ -30,16 +30,17 @@ struct GridCard: View {
             .overlay(
                 Rectangle()
                     .frame(width: nil, height: 1, alignment:.top)
-                    .foregroundColor(Color.white.opacity(0.5)),
+                    .foregroundColor(Color.white.opacity(0.2)),
                 alignment: .top
             )
         }
         .background(.ultraThinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .cornerRadius(10)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
-                .stroke(.white.opacity(0.5))
+                .stroke(.white.opacity(0.2))
         )
+        .shadow(color: Color.black.opacity(0.5), radius: 20, x: 0, y: 10)
     }
 }
 

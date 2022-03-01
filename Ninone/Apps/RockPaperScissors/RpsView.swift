@@ -83,6 +83,11 @@ struct RockPaperScissorsView: View {
         .sheet(isPresented: $vm.showingSheet){
             // TODO: create new View to introduce the app
             Text("About this MiniApp")
+            Text(vm.appDesc.description)
+            
+            ForEach(vm.appDesc.keywords, id: \.self) { keyword in
+                Text(keyword)
+            }
         }
         .alert(vm.alerTitle, isPresented: $vm.showingAlert) {
             Button("Ok"){
