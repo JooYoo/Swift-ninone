@@ -25,6 +25,8 @@
 		9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6927CD4C29003292E6 /* StaticBg.swift */; };
 		9AA35E6C27CE7C3D003292E6 /* MiniAppDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */; };
 		9AA35E6E27CE8275003292E6 /* GridCardBigFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */; };
+		9AA35E7027CFC75C003292E6 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6F27CFC75C003292E6 /* About.swift */; };
+		9AA35E7227CFCDF5003292E6 /* AboutVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E7127CFCDF5003292E6 /* AboutVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		9AA35E6927CD4C29003292E6 /* StaticBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticBg.swift; sourceTree = "<group>"; };
 		9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppDesc.swift; sourceTree = "<group>"; };
 		9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCardBigFont.swift; sourceTree = "<group>"; };
+		9AA35E6F27CFC75C003292E6 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		9AA35E7127CFCDF5003292E6 /* AboutVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			children = (
 				9A90A4DA27ADA4AC00DD8579 /* MiniApp.swift */,
 				9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */,
+				9AA35E6F27CFC75C003292E6 /* About.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				9AA35E6327CD4593003292E6 /* MiniAppVM.swift */,
+				9AA35E7127CFCDF5003292E6 /* AboutVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,7 +247,9 @@
 				9A90A4CD27ADA1BD00DD8579 /* NinoneApp.swift in Sources */,
 				9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */,
 				9A945F7B27AED347002162EB /* RpsView.swift in Sources */,
+				9AA35E7227CFCDF5003292E6 /* AboutVM.swift in Sources */,
 				9AA35E5F27CD439E003292E6 /* GridCard.swift in Sources */,
+				9AA35E7027CFC75C003292E6 /* About.swift in Sources */,
 				9AA35E6427CD4593003292E6 /* MiniAppVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

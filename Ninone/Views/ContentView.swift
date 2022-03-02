@@ -22,7 +22,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            AboutView(vm: vm)
+            AboutView()
                 .tabItem {
                     Label("About", systemImage: "info.circle")
                 }
