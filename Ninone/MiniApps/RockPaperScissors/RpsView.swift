@@ -9,9 +9,10 @@ import SwiftUI
 
 struct RockPaperScissorsView: View {
     @StateObject var vm = RpsViewModel()
+    @StateObject var infoVm = AppInfoVM()
     
     var body: some View {
-       
+        
         ZStack{
             // bg-color
             switch vm.resState {
@@ -68,8 +69,8 @@ struct RockPaperScissorsView: View {
             .offset(y: -40)
             
         }
-//        .navigationBarTitle("Ro.Pa.Sci")
-//        .navigationBarTitleDisplayMode(.inline)
+        //        .navigationBarTitle("Ro.Pa.Sci")
+        //        .navigationBarTitleDisplayMode(.inline)
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button{
@@ -81,12 +82,8 @@ struct RockPaperScissorsView: View {
             }
         }
         .sheet(isPresented: $vm.showingSheet){
-            // TODO: create new View to introduce the app
-            Text("About this MiniApp")
-            Text(vm.appDesc.description)
-            
-            ForEach(vm.appDesc.keywords, id: \.self) { keyword in
-                Text(keyword)
+            AppInfoSheet(info: infoVm.rpsInfo) {
+                LinearGradient(colors: [ Color(red: 0.20, green: 0.03, blue: 0.40), Color(red: 0.19, green: 0.81, blue: 0.82)], startPoint: .topLeading, endPoint: .bottomTrailing)
             }
         }
         .alert(vm.alerTitle, isPresented: $vm.showingAlert) {
@@ -101,7 +98,7 @@ struct RockPaperScissorsView: View {
 
 struct RockPaperScissorsView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{        
+        NavigationView{
             RockPaperScissorsView()
         }
     }

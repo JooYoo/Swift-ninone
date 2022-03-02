@@ -100,7 +100,4 @@ class RpsViewModel: ObservableObject {
         aiChoiceIdx = Int.random(in: 0...2)
         shouldWin = Bool.random()
     }
-    
-    // MARK: - This app info
-    @Published var appDesc = MiniAppDesc(description: "About RPS lorem 🥰", keywords: ["Button", "List", "NavigationView"])
 }

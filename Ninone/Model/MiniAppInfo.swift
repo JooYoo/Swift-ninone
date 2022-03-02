@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct MiniAppDesc {
+struct MiniAppInfo {
+    let icon: String
+    let name: String
     let description: String
     let keywords: [String]
 }

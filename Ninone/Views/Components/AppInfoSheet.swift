@@ -1,0 +1,71 @@
+//
+//  AppInfoSheet.swift
+//  Ninone
+//
+//  Created by Yu on 2022/3/2.
+//
+
+import SwiftUI
+
+struct AppInfoSheet<Content: View>: View {
+    let info: MiniAppInfo
+    @ViewBuilder var content: Content
+    
+    var body: some View {
+        ZStack{
+            // bg
+            content
+                .ignoresSafeArea()
+            
+            // content
+            ScrollView{
+                VStack(alignment:.center, spacing: 15){
+                    VStack{
+                        Text(info.icon)
+                            .font(.system(size: 60))
+                            .shadow(color: Color.black.opacity(0.6), radius: 10, x: 0, y: 5)
+                        Text(info.name)
+                            .font(.largeTitle.bold())
+                        
+                        HStack{
+                            ForEach(info.keywords, id: \.self){ word in
+                                Text(word)
+                                    .padding(.horizontal, 10)
+                                    .padding(.vertical, 5)
+                                    .background(Color.random)
+                                    .cornerRadius(20)
+                                    .shadow(color: Color.black.opacity(0.6), radius: 10, x: 0, y: 5)
+                            }
+                        }
+                    }
+                    .padding(.bottom, 20)
+                    
+                    Text(info.description)
+                        .padding(.horizontal)
+                }
+                .padding(.top,100)
+                
+            }
+            .foregroundColor(.white)
+            .padding()
+        }
+    }
+}
+
+extension Color {
+    static var random: Color {
+        return Color(
+            hue: .random(in: 0...1),
+            saturation: .random(in: 0...1),
+            brightness: .random(in: 0...0.6)
+        )
+    }
+}
+
+//struct AppInfoSheet_Previews: PreviewProvider {
+//    static var appInfoVM = AppInfoVM()
+//    
+//    static var previews: some View {
+//        AppInfoSheet(info: appInfoVM.rpsInfo)
+//    }
+//}

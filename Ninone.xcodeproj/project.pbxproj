@@ -23,10 +23,12 @@
 		9AA35E6427CD4593003292E6 /* MiniAppVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6327CD4593003292E6 /* MiniAppVM.swift */; };
 		9AA35E6827CD48BF003292E6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6727CD48BF003292E6 /* AboutView.swift */; };
 		9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6927CD4C29003292E6 /* StaticBg.swift */; };
-		9AA35E6C27CE7C3D003292E6 /* MiniAppDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */; };
+		9AA35E6C27CE7C3D003292E6 /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6B27CE7C3D003292E6 /* MiniAppInfo.swift */; };
 		9AA35E6E27CE8275003292E6 /* GridCardBigFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */; };
 		9AA35E7027CFC75C003292E6 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E6F27CFC75C003292E6 /* About.swift */; };
 		9AA35E7227CFCDF5003292E6 /* AboutVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E7127CFCDF5003292E6 /* AboutVM.swift */; };
+		9AA35E7527CFD073003292E6 /* AppInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E7427CFD073003292E6 /* AppInfoVM.swift */; };
+		9AA35E7727CFD1AC003292E6 /* AppInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E7627CFD1AC003292E6 /* AppInfoSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +49,12 @@
 		9AA35E6327CD4593003292E6 /* MiniAppVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppVM.swift; sourceTree = "<group>"; };
 		9AA35E6727CD48BF003292E6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		9AA35E6927CD4C29003292E6 /* StaticBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticBg.swift; sourceTree = "<group>"; };
-		9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppDesc.swift; sourceTree = "<group>"; };
+		9AA35E6B27CE7C3D003292E6 /* MiniAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppInfo.swift; sourceTree = "<group>"; };
 		9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCardBigFont.swift; sourceTree = "<group>"; };
 		9AA35E6F27CFC75C003292E6 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		9AA35E7127CFCDF5003292E6 /* AboutVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVM.swift; sourceTree = "<group>"; };
+		9AA35E7427CFD073003292E6 /* AppInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoVM.swift; sourceTree = "<group>"; };
+		9AA35E7627CFD1AC003292E6 /* AppInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,7 @@
 				9AA35E6527CD4753003292E6 /* Model */,
 				9AA35E6627CD475B003292E6 /* ViewModel */,
 				9AA35E6227CD4552003292E6 /* Views */,
-				9A90A4E027ADAB1A00DD8579 /* Apps */,
+				9A90A4E027ADAB1A00DD8579 /* MiniApps */,
 				9A90A4D027ADA1C200DD8579 /* Assets.xcassets */,
 				9A90A4D227ADA1C200DD8579 /* Preview Content */,
 			);
@@ -102,7 +106,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9A90A4E027ADAB1A00DD8579 /* Apps */ = {
+		9A90A4E027ADAB1A00DD8579 /* MiniApps */ = {
 			isa = PBXGroup;
 			children = (
 				9A945F8927B19B2F002162EB /* RockPaperScissors */,
@@ -110,15 +114,16 @@
 				9A90A4E127ADAB6C00DD8579 /* TodosView.swift */,
 				9A90A4E327ADACFB00DD8579 /* WeatherView.swift */,
 			);
-			path = Apps;
+			path = MiniApps;
 			sourceTree = "<group>";
 		};
 		9A945F8027AF01B0002162EB /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9AA35E5E27CD439E003292E6 /* GridCard.swift */,
 				9AA35E6D27CE8275003292E6 /* GridCardBigFont.swift */,
 				9AA35E6927CD4C29003292E6 /* StaticBg.swift */,
+				9AA35E7627CFD1AC003292E6 /* AppInfoSheet.swift */,
+				9AA35E5E27CD439E003292E6 /* GridCard.swift */,
 				9A945F7E27AF01A6002162EB /* GlassmorphismBg.swift */,
 			);
 			path = Components;
@@ -148,8 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				9A90A4DA27ADA4AC00DD8579 /* MiniApp.swift */,
-				9AA35E6B27CE7C3D003292E6 /* MiniAppDesc.swift */,
 				9AA35E6F27CFC75C003292E6 /* About.swift */,
+				9AA35E6B27CE7C3D003292E6 /* MiniAppInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			children = (
 				9AA35E6327CD4593003292E6 /* MiniAppVM.swift */,
 				9AA35E7127CFCDF5003292E6 /* AboutVM.swift */,
+				9AA35E7427CFD073003292E6 /* AppInfoVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -234,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A90A4E227ADAB6C00DD8579 /* TodosView.swift in Sources */,
-				9AA35E6C27CE7C3D003292E6 /* MiniAppDesc.swift in Sources */,
+				9AA35E6C27CE7C3D003292E6 /* MiniAppInfo.swift in Sources */,
 				9A945F8B27B19B87002162EB /* RpsViewModel.swift in Sources */,
 				9A90A4DF27ADAB0400DD8579 /* FakeOrderView.swift in Sources */,
 				9A945F7F27AF01A6002162EB /* GlassmorphismBg.swift in Sources */,
@@ -243,10 +249,12 @@
 				9AA35E6127CD44CE003292E6 /* HomeView.swift in Sources */,
 				9A90A4E427ADACFB00DD8579 /* WeatherView.swift in Sources */,
 				9AA35E6E27CE8275003292E6 /* GridCardBigFont.swift in Sources */,
+				9AA35E7527CFD073003292E6 /* AppInfoVM.swift in Sources */,
 				9A90A4CF27ADA1BD00DD8579 /* ContentView.swift in Sources */,
 				9A90A4CD27ADA1BD00DD8579 /* NinoneApp.swift in Sources */,
 				9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */,
 				9A945F7B27AED347002162EB /* RpsView.swift in Sources */,
+				9AA35E7727CFD1AC003292E6 /* AppInfoSheet.swift in Sources */,
 				9AA35E7227CFCDF5003292E6 /* AboutVM.swift in Sources */,
 				9AA35E5F27CD439E003292E6 /* GridCard.swift in Sources */,
 				9AA35E7027CFC75C003292E6 /* About.swift in Sources */,
