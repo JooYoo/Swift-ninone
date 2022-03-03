@@ -29,6 +29,9 @@
 		9AA35E7227CFCDF5003292E6 /* AboutVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E7127CFCDF5003292E6 /* AboutVM.swift */; };
 		9AA35E7527CFD073003292E6 /* AppInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E7427CFD073003292E6 /* AppInfoVM.swift */; };
 		9AA35E7727CFD1AC003292E6 /* AppInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA35E7627CFD1AC003292E6 /* AppInfoSheet.swift */; };
+		9AECE9E427D11E8400BFE5A6 /* WeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9E327D11E8400BFE5A6 /* WeatherVM.swift */; };
+		9AECE9E627D11EEF00BFE5A6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9E527D11EEF00BFE5A6 /* Weather.swift */; };
+		9AECE9E927D129AA00BFE5A6 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 9AECE9E827D129AA00BFE5A6 /* WrappingHStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,10 @@
 		9AA35E7127CFCDF5003292E6 /* AboutVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVM.swift; sourceTree = "<group>"; };
 		9AA35E7427CFD073003292E6 /* AppInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoVM.swift; sourceTree = "<group>"; };
 		9AA35E7627CFD1AC003292E6 /* AppInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoSheet.swift; sourceTree = "<group>"; };
+		9AECE9E027D11D9700BFE5A6 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		9AECE9E127D11E5400BFE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9AECE9E327D11E8400BFE5A6 /* WeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVM.swift; sourceTree = "<group>"; };
+		9AECE9E527D11EEF00BFE5A6 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AECE9E927D129AA00BFE5A6 /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +79,7 @@
 		9A90A4C027ADA1BD00DD8579 = {
 			isa = PBXGroup;
 			children = (
+				9AECE9E027D11D9700BFE5A6 /* Secrets.xcconfig */,
 				9A90A4CB27ADA1BD00DD8579 /* Ninone */,
 				9A90A4CA27ADA1BD00DD8579 /* Products */,
 			);
@@ -87,6 +96,7 @@
 		9A90A4CB27ADA1BD00DD8579 /* Ninone */ = {
 			isa = PBXGroup;
 			children = (
+				9AECE9E127D11E5400BFE5A6 /* Info.plist */,
 				9A90A4CC27ADA1BD00DD8579 /* NinoneApp.swift */,
 				9AA35E6527CD4753003292E6 /* Model */,
 				9AA35E6627CD475B003292E6 /* ViewModel */,
@@ -110,9 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				9A945F8927B19B2F002162EB /* RockPaperScissors */,
+				9AECE9E227D11E7300BFE5A6 /* Weather */,
 				9A90A4DE27ADAB0400DD8579 /* FakeOrderView.swift */,
 				9A90A4E127ADAB6C00DD8579 /* TodosView.swift */,
-				9A90A4E327ADACFB00DD8579 /* WeatherView.swift */,
 			);
 			path = MiniApps;
 			sourceTree = "<group>";
@@ -169,6 +179,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		9AECE9E227D11E7300BFE5A6 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				9AECE9E527D11EEF00BFE5A6 /* Weather.swift */,
+				9AECE9E327D11E8400BFE5A6 /* WeatherVM.swift */,
+				9A90A4E327ADACFB00DD8579 /* WeatherView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +205,9 @@
 			dependencies = (
 			);
 			name = Ninone;
+			packageProductDependencies = (
+				9AECE9E827D129AA00BFE5A6 /* WrappingHStack */,
+			);
 			productName = Ninone;
 			productReference = 9A90A4C927ADA1BD00DD8579 /* Ninone.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 9A90A4C027ADA1BD00DD8579;
+			packageReferences = (
+				9AECE9E727D129AA00BFE5A6 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 9A90A4CA27ADA1BD00DD8579 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,8 +276,10 @@
 				9A90A4E427ADACFB00DD8579 /* WeatherView.swift in Sources */,
 				9AA35E6E27CE8275003292E6 /* GridCardBigFont.swift in Sources */,
 				9AA35E7527CFD073003292E6 /* AppInfoVM.swift in Sources */,
+				9AECE9E427D11E8400BFE5A6 /* WeatherVM.swift in Sources */,
 				9A90A4CF27ADA1BD00DD8579 /* ContentView.swift in Sources */,
 				9A90A4CD27ADA1BD00DD8579 /* NinoneApp.swift in Sources */,
+				9AECE9E627D11EEF00BFE5A6 /* Weather.swift in Sources */,
 				9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */,
 				9A945F7B27AED347002162EB /* RpsView.swift in Sources */,
 				9AA35E7727CFD1AC003292E6 /* AppInfoSheet.swift in Sources */,
@@ -267,6 +295,7 @@
 /* Begin XCBuildConfiguration section */
 		9A90A4D527ADA1C200DD8579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AECE9E027D11D9700BFE5A6 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -328,6 +357,7 @@
 		};
 		9A90A4D627ADA1C200DD8579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AECE9E027D11D9700BFE5A6 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -392,6 +422,7 @@
 				DEVELOPMENT_TEAM = 48J67Q2762;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ninone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -421,6 +452,7 @@
 				DEVELOPMENT_TEAM = 48J67Q2762;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ninone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +493,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9AECE9E727D129AA00BFE5A6 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9AECE9E827D129AA00BFE5A6 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AECE9E727D129AA00BFE5A6 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A90A4C127ADA1BD00DD8579 /* Project object */;
 }

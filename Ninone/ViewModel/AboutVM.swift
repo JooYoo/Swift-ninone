@@ -12,7 +12,7 @@ class AboutVM: ObservableObject {
         name: "NINONE",
         icon: "💾",
         version: "1.0.0",
-        intro: "NINONE pronouce as n, in, one. It’s an App which bundles several mini-apps together, to showcase what the new frameworks or Libraries from Apple Eco-System can do. The development details of each app can be found on the information sheet of the corresponding app.",
+        intro: "NINONE pronouce as n, in, one. It’s a showcase of iOS development learning. This app bundles several mini-projects together, to represent what the new frameworks or Libraries can do. The development details of each project can be found on the information sheet of the corresponding project.",
         year: "2022 - 2022"
     )
 }
