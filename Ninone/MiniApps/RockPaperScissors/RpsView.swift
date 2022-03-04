@@ -66,11 +66,9 @@ struct RockPaperScissorsView: View {
             }
             .padding()
             .foregroundColor(.white)
-            .offset(y: -40)
-            
         }
-        //        .navigationBarTitle("Ro.Pa.Sci")
-        //        .navigationBarTitleDisplayMode(.inline)
+        .navigationViewStyle(.stack)
+        .navigationBarTitle("R.P.S", displayMode: .inline)
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button{

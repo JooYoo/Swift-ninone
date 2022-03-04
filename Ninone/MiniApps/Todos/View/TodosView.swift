@@ -52,7 +52,7 @@ struct TodosView: View {
         }
         .sheet(isPresented: $showingSheet){
             AppInfoSheet(info: infoVm.todosInfo) {
-                LinearGradient(colors: [Color(red: 0.93, green: 0.43, blue: 0.63), Color(red: 0.93, green: 0.55, blue: 0.41)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(colors: [Color(red: 0.43, green: 0.27, blue: 0.89), Color(red: 0.53, green: 0.83, blue: 0.81)], startPoint: .topLeading, endPoint: .bottomTrailing)
             }
         }
     }
