@@ -55,7 +55,7 @@ struct WeatherView: View {
             }
         }
         .navigationViewStyle(.stack)
-        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarTitle("Weather", displayMode: .inline)
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button{

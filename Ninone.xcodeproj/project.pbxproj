@@ -32,6 +32,12 @@
 		9AECE9E427D11E8400BFE5A6 /* WeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9E327D11E8400BFE5A6 /* WeatherVM.swift */; };
 		9AECE9E627D11EEF00BFE5A6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9E527D11EEF00BFE5A6 /* Weather.swift */; };
 		9AECE9E927D129AA00BFE5A6 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 9AECE9E827D129AA00BFE5A6 /* WrappingHStack */; };
+		9AECE9ED27D28B7500BFE5A6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9AECE9EC27D28B7500BFE5A6 /* Realm */; };
+		9AECE9EF27D28B7500BFE5A6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9AECE9EE27D28B7500BFE5A6 /* RealmSwift */; };
+		9AECE9F127D28BA200BFE5A6 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9F027D28BA200BFE5A6 /* Todo.swift */; };
+		9AECE9F327D28BFA00BFE5A6 /* TodoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9F227D28BFA00BFE5A6 /* TodoVM.swift */; };
+		9AECE9F527D28E0C00BFE5A6 /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9F427D28E0C00BFE5A6 /* InputBox.swift */; };
+		9AECE9F827D28E7300BFE5A6 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AECE9F727D28E7300BFE5A6 /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,10 @@
 		9AECE9E127D11E5400BFE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9AECE9E327D11E8400BFE5A6 /* WeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVM.swift; sourceTree = "<group>"; };
 		9AECE9E527D11EEF00BFE5A6 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		9AECE9F027D28BA200BFE5A6 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		9AECE9F227D28BFA00BFE5A6 /* TodoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVM.swift; sourceTree = "<group>"; };
+		9AECE9F427D28E0C00BFE5A6 /* InputBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBox.swift; sourceTree = "<group>"; };
+		9AECE9F727D28E7300BFE5A6 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AECE9EF27D28B7500BFE5A6 /* RealmSwift in Frameworks */,
+				9AECE9ED27D28B7500BFE5A6 /* Realm in Frameworks */,
 				9AECE9E927D129AA00BFE5A6 /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,8 +133,8 @@
 			children = (
 				9A945F8927B19B2F002162EB /* RockPaperScissors */,
 				9AECE9E227D11E7300BFE5A6 /* Weather */,
+				9AECE9EA27D28B2C00BFE5A6 /* Todos */,
 				9A90A4DE27ADAB0400DD8579 /* FakeOrderView.swift */,
-				9A90A4E127ADAB6C00DD8579 /* TodosView.swift */,
 			);
 			path = MiniApps;
 			sourceTree = "<group>";
@@ -189,6 +201,34 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
+		9AECE9EA27D28B2C00BFE5A6 /* Todos */ = {
+			isa = PBXGroup;
+			children = (
+				9AECE9F027D28BA200BFE5A6 /* Todo.swift */,
+				9AECE9F227D28BFA00BFE5A6 /* TodoVM.swift */,
+				9AECE9F927D28F1800BFE5A6 /* View */,
+			);
+			path = Todos;
+			sourceTree = "<group>";
+		};
+		9AECE9F627D28E1500BFE5A6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9AECE9F427D28E0C00BFE5A6 /* InputBox.swift */,
+				9AECE9F727D28E7300BFE5A6 /* ListItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9AECE9F927D28F1800BFE5A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AECE9F627D28E1500BFE5A6 /* Components */,
+				9A90A4E127ADAB6C00DD8579 /* TodosView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +247,8 @@
 			name = Ninone;
 			packageProductDependencies = (
 				9AECE9E827D129AA00BFE5A6 /* WrappingHStack */,
+				9AECE9EC27D28B7500BFE5A6 /* Realm */,
+				9AECE9EE27D28B7500BFE5A6 /* RealmSwift */,
 			);
 			productName = Ninone;
 			productReference = 9A90A4C927ADA1BD00DD8579 /* Ninone.app */;
@@ -238,6 +280,7 @@
 			mainGroup = 9A90A4C027ADA1BD00DD8579;
 			packageReferences = (
 				9AECE9E727D129AA00BFE5A6 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+				9AECE9EB27D28B7500BFE5A6 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 9A90A4CA27ADA1BD00DD8579 /* Products */;
 			projectDirPath = "";
@@ -269,11 +312,13 @@
 				9AA35E6C27CE7C3D003292E6 /* MiniAppInfo.swift in Sources */,
 				9A945F8B27B19B87002162EB /* RpsViewModel.swift in Sources */,
 				9A90A4DF27ADAB0400DD8579 /* FakeOrderView.swift in Sources */,
+				9AECE9F527D28E0C00BFE5A6 /* InputBox.swift in Sources */,
 				9A945F7F27AF01A6002162EB /* GlassmorphismBg.swift in Sources */,
 				9AA35E6827CD48BF003292E6 /* AboutView.swift in Sources */,
 				9A90A4DB27ADA4AD00DD8579 /* MiniApp.swift in Sources */,
 				9AA35E6127CD44CE003292E6 /* HomeView.swift in Sources */,
 				9A90A4E427ADACFB00DD8579 /* WeatherView.swift in Sources */,
+				9AECE9F827D28E7300BFE5A6 /* ListItem.swift in Sources */,
 				9AA35E6E27CE8275003292E6 /* GridCardBigFont.swift in Sources */,
 				9AA35E7527CFD073003292E6 /* AppInfoVM.swift in Sources */,
 				9AECE9E427D11E8400BFE5A6 /* WeatherVM.swift in Sources */,
@@ -281,12 +326,14 @@
 				9A90A4CD27ADA1BD00DD8579 /* NinoneApp.swift in Sources */,
 				9AECE9E627D11EEF00BFE5A6 /* Weather.swift in Sources */,
 				9AA35E6A27CD4C29003292E6 /* StaticBg.swift in Sources */,
+				9AECE9F327D28BFA00BFE5A6 /* TodoVM.swift in Sources */,
 				9A945F7B27AED347002162EB /* RpsView.swift in Sources */,
 				9AA35E7727CFD1AC003292E6 /* AppInfoSheet.swift in Sources */,
 				9AA35E7227CFCDF5003292E6 /* AboutVM.swift in Sources */,
 				9AA35E5F27CD439E003292E6 /* GridCard.swift in Sources */,
 				9AA35E7027CFC75C003292E6 /* About.swift in Sources */,
 				9AA35E6427CD4593003292E6 /* MiniAppVM.swift in Sources */,
+				9AECE9F127D28BA200BFE5A6 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +550,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		9AECE9EB27D28B7500BFE5A6 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -510,6 +565,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9AECE9E727D129AA00BFE5A6 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
 			productName = WrappingHStack;
+		};
+		9AECE9EC27D28B7500BFE5A6 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AECE9EB27D28B7500BFE5A6 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		9AECE9EE27D28B7500BFE5A6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AECE9EB27D28B7500BFE5A6 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
