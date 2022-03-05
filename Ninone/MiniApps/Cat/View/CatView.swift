@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CatView: View {
     @StateObject var vm = CatVM()
+    @StateObject var infoVm = AppInfoVM()
+    @State var showingSheet = false
     
     var body: some View {
         
@@ -26,11 +28,26 @@ struct CatView: View {
                     proxy.scrollTo("amau")
                 }
             }
-            .navigationViewStyle(.stack)
-            .navigationBarTitle("Cat", displayMode: .inline)
             .searchable(text: $vm.userInput, placement: .navigationBarDrawer(displayMode: .always))
             .refreshable {
                 vm.getBreeds()
+            }
+        }
+        .navigationViewStyle(.stack)
+        .navigationBarTitle("Cat", displayMode: .inline)
+        .toolbar{
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button{
+                    showingSheet = true
+                }label: {
+                    Label("About", systemImage: "info.circle")
+                        .foregroundColor(.white)
+                }
+            }
+        }
+        .sheet(isPresented: $showingSheet){
+            AppInfoSheet(info: infoVm.catInfo) {
+                LinearGradient(colors: [Color(red: 0.00, green: 0.42, blue: 0.46), Color(red: 0.22, green: 0.93, blue: 0.73)], startPoint: .topLeading, endPoint: .bottomTrailing)
             }
         }
     }

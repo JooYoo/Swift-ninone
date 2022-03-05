@@ -28,20 +28,20 @@ class MiniAppVM: ObservableObject {
             miniAppView: AnyView(TodosView())
         ),
         MiniApp(
-            name: "Pokédex",
-            emoji: "🦋",
-            createDate: "2022-02-25",
-            shortDesc: "There are more 100 Pokemons in total. Check some of the Pokemon infomation in the app. Once the app is loaded, the data will be saved in local.",
-            themeColor: Color.green,
-            miniAppView: AnyView(CatView())
-        ),
-        MiniApp(
             name: "Weather",
             emoji: "🌥",
             createDate: "2022-02-11",
             shortDesc: "Users can search for weather conditions in different areas. The app covers most of the big cities in the world.",
             themeColor: Color.blue,
             miniAppView: AnyView(WeatherView())
+        ),
+        MiniApp(
+            name: "Cat",
+            emoji: "🐈",
+            createDate: "2022-02-25",
+            shortDesc: "More than 50 Cats in total the users can browse. Check some of the Cat information in the app. Once the app is loaded, the data will be saved locally.",
+            themeColor: Color.green,
+            miniAppView: AnyView(CatView())
         ),
     ]
     
