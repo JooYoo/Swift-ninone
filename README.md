@@ -3,7 +3,7 @@
 
 <p align="center">
   <strong>
-    <a href="https://google.com/">🍎 &nbsp; AppStore</a>
+    <a href="https://apps.apple.com/app/id1612951511?platform=iphone">🍎 &nbsp; AppStore</a>
   </strong>
 </p>
 
