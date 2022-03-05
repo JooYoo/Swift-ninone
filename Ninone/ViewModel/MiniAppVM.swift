@@ -33,7 +33,7 @@ class MiniAppVM: ObservableObject {
             createDate: "2022-02-25",
             shortDesc: "There are more 100 Pokemons in total. Check some of the Pokemon infomation in the app. Once the app is loaded, the data will be saved in local.",
             themeColor: Color.green,
-            miniAppView: AnyView(FakeOrderView())
+            miniAppView: AnyView(CatView())
         ),
         MiniApp(
             name: "Weather",

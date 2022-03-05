@@ -25,9 +25,7 @@ struct AboutView: View {
                     Divider()
                         .background(.white)
                         .padding(.bottom, 5)
-                    
-                    
-                    
+
                     Text(vm.about.intro)
                         .padding(.horizontal)
                         
