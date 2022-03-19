@@ -32,4 +32,5 @@ A showcase of iOS development learning. This app bundles several mini-projects t
 
 # Third-party Libraries
 
+- [Realm](https://github.com/realm/realm-swift): persistent data
 - [Kingfisher](https://github.com/onevcat/Kingfisher): cache image from API via image-url
