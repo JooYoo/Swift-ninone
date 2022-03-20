@@ -34,3 +34,4 @@ A showcase of iOS development learning. This app bundles several mini-projects t
 
 - [Realm](https://github.com/realm/realm-swift): persistent data
 - [Kingfisher](https://github.com/onevcat/Kingfisher): cache image from API via image-url
+- [WrappingHStack](https://github.com/dkk/WrappingHStack): wrapping elements inside of HStack
